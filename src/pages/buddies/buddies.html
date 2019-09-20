@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle >
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Invitations</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchstring" (input)="searchuser($event)" placeholder="Search"></ion-searchbar>
+<ion-list>
+    <ion-item *ngFor="let key of filteredusers">
+        <ion-avatar item-start><img src="{{key.photoURL}}"></ion-avatar>
+        <h2>{{key.displayName}}</h2>
+        <button ion-button item-end outline color="primary" (click)="sendreq(key)"><ion-icon name="person-add"></ion-icon>Envoyer</button>
+    </ion-item>
+
+</ion-list>
+</ion-content>
