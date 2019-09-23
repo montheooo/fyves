@@ -7,6 +7,7 @@ import { MapPage } from '../pages/map/map';
 import { GeofencePage } from '../pages/geofence/geofence';
 import { initializeApp } from 'firebase';
 import { BuddiesPage } from '../pages/buddies/buddies';
+import { ChatsPage } from '../pages/chats/chats';
 
 @Component({
   templateUrl: 'app.html'
@@ -35,7 +36,7 @@ export class MyApp {
 			{ title: 'Home', component: HomePage, icon: 'home' },
       { title: 'Géolocalisation', component: MapPage, icon: 'map' },
       { title: 'Géo-Réperage', component: GeofencePage, icon: 'md-pin' },
-      { title: 'Chat', component: BuddiesPage, icon: 'swap' },
+      { title: 'Chat Message', component: ChatsPage, icon: 'swap' },
     ];
     
     this.initializeApp();
@@ -58,7 +59,7 @@ export class MyApp {
 
   openPage(page) {
     this.menu.close();
-    this.nav.setRoot(page.component);
+    this.nav.push(page.component);
   }
 
 

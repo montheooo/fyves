@@ -26,6 +26,7 @@ import { MapsService } from '../providers/home/maps.service';
 import { CallService } from '../providers/home/call.service';
 import { InAppBrowserService } from '../providers/home/in-app-browser.service';
 import { BuddiesPageModule } from '../pages/buddies/buddies.module';
+import { ChatsPageModule } from '../pages/chats/chats.module';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { BuddiesPageModule } from '../pages/buddies/buddies.module';
     IonicModule.forRoot(MyApp,{tabsPlacement : 'top'}),
     GeofencePageModule,
     BuddiesPageModule,
+    ChatsPageModule,
     AngularFireModule.initializeApp(config),
   ],
   bootstrap: [IonicApp],

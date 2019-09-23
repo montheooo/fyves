@@ -1,17 +1,18 @@
 <ion-header>
-  <ion-navbar color="dark">
+  <ion-navbar color="primary">
+      
     <div class="profile-image-wrap">
       <div class="profile-image"  (click)="editimage()">
           <img src="{{avatar}}">
       </div>
-      <button ion-button round outline color="danger"  (click)="logout()">Logout</button>
+      <button ion-button round  color="primary"  (click)="logout()">LOGOUT</button>
     </div>
     <div class="profile-info">
       <div class="title">
         <h2 (click)="editname()">{{username}}</h2>
       </div>
       <div class="subtitle">
-        Tap on your pic or username to change it.
+        Modifier votre nom d'utilisateur ou votre photo de profil
       </div>
     </div>
     <div class="spacer" style="height: 10px;"></div>
@@ -33,11 +34,11 @@
   <div *ngIf="myfriends == '' " class="backdropdiv">
     <div class="focus-on">
       <ion-fab bottom right>
-        <button ion-fab color="darkblue" (click)="addbuddy()"><ion-icon name="person-add"></ion-icon></button>
+        <button ion-fab color="primary" (click)="addbuddy()"><ion-icon name="person-add"></ion-icon></button>
       </ion-fab>
     </div>
     <div class="instrucation">
-      <p style="color:#fff;">Click, on button to Add Friends</p>
+      <p style="color:#fff;">Clicker pour démarrer une conversation</p>
     <img src="assets/imgs/introarrrow.png">
     </div>
   </div>
@@ -54,7 +55,7 @@
     </ion-item>
   </ion-list>
   <ion-fab bottom right>
-    <button ion-fab color="darkblue" (click)="addbuddy()"><ion-icon name="person-add"></ion-icon></button>
+    <button ion-fab color="primary" (click)="addbuddy()"><ion-icon name="person-add"></ion-icon></button>
   </ion-fab>
 </div>
 </ion-content>

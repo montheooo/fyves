@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar color="darkblue">
+  <ion-navbar color="primary">
     <ion-title>
       <div class="user-icon"><img src="{{buddy.photoURL}}"></div>
       {{buddy.displayName}}
@@ -34,12 +34,12 @@
  <ion-footer ion-fixed>
    <form>
    <ion-toolbar class="no-border" color="white">
-     <ion-input [(ngModel)]="newmessage" name= "newmessage" class="newmsg" placeholder="Write your message ..."></ion-input>
+     <ion-input [(ngModel)]="newmessage" name= "newmessage" class="newmsg" placeholder="Ecrire votre message ..."></ion-input>
      <ion-buttons end>
        <button ion-button (click)="sendPicMsg()"><ion-icon class="camera-btn" name="camera"></ion-icon></button>
      </ion-buttons>
      <ion-buttons end>
-       <button ion-button round type="submit" class="sentbtn" (click)="addmessage()"><ion-icon name="send" color="wcolor" style="font-size: 2.2em;"></ion-icon></button>
+       <button ion-button round type="submit" class="sentbtn" (click)="addmessage()"><ion-icon name="send" color="primary" style="font-size: 2.2em;"></ion-icon></button>
      </ion-buttons>
     </ion-toolbar>
   </form>
