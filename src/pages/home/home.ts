@@ -10,6 +10,9 @@ import { GeofencePage } from '../geofence/geofence';
 import { MapPage } from '../map/map';
 import { BuddiesPage } from '../buddies/buddies';
 
+import * as firebase from 'Firebase';
+import { FCM } from '@ionic-native/fcm';
+
 /**
  * Generated class for the HomePage page.
  *
@@ -29,6 +32,7 @@ export class HomePage {
 	private mapsService: MapsService;
 	private browserService: InAppBrowserService;
 	private nav: Nav;
+	
 //	private ref = firebase.database().ref();
 //	private Geofences = [] ;
 //	private email : string 
@@ -36,21 +40,38 @@ export class HomePage {
 
 
   constructor(public platform: Platform,
-	//	emailService: EmailService,
 		callService: CallService,
 		mapsService: MapsService,
 		browserService: InAppBrowserService,
-	//	private fire: AuthService ,
-	//	private device: Device,
-	//	private geofence: Geofence,
-	//	private auth: AuthService,
-	//	public alertCtrl: AlertController,
-		nav: Nav
+		nav: Nav,
+		private fcm: FCM
 ) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+		console.log('ionViewDidLoad HomePage');
+		this.fcm.subscribeToTopic('marketing');
+
+      this.fcm.getToken().then(token => {
+        // backend.registerToken(token);
+        console.log(token) ;
+        this.addToken(token) ;
+        
+      });
+
+      this.fcm.onNotification().subscribe(data => {
+        if(data.wasTapped){
+          console.log("Received in background");
+        } else {
+          console.log("Received in foreground");
+        };
+      });
+
+      this.fcm.onTokenRefresh().subscribe(token => {
+        // backend.registerToken(token);
+          this.addToken(token) ;
+      });
+
   }
 
   private initTiles(): void {
@@ -93,5 +114,20 @@ export class HomePage {
 	public callUs() {
 		this.callService.call(data.phoneNumber);
 	}
+
+	addToken(token){
+    var promise = new Promise((resolve, reject)=> {
+      let dbref = firebase.database().ref('/users') ;
+        dbref.child(firebase.auth().currentUser.uid + '/notificationTokens/').set({
+          notificationToken: token 
+        })
+        .then(()=>{
+          resolve(true);
+        }).catch((err)=>{
+          reject(err);
+        })
+    })
+    return promise;
+}
 
 }

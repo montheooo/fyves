@@ -28,6 +28,11 @@ import { InAppBrowserService } from '../providers/home/in-app-browser.service';
 import { BuddiesPageModule } from '../pages/buddies/buddies.module';
 import { ChatsPageModule } from '../pages/chats/chats.module';
 
+import { FCM } from '@ionic-native/fcm';
+import { TokenProvider } from '../providers/chat/token';
+
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -62,7 +67,10 @@ import { ChatsPageModule } from '../pages/chats/chats.module';
     EmailService,
     MapsService,
     CallService,
-    InAppBrowserService
+    InAppBrowserService,
+    FCM,
+    TokenProvider
+    
   ]
 })
 export class AppModule {}
