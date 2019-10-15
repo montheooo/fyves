@@ -10,7 +10,7 @@ import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/fo
   templateUrl: 'ragister.html',
 })
 export class RagisterPage {
-  newuser = {email:'',username:'',password:'',cnfpassword:''}
+  newuser = {email:'',username:'',password:'',cnfpassword:'',role:'',phone:''}
   email:AbstractControl;
   username:AbstractControl;
   password:AbstractControl;
@@ -21,15 +21,21 @@ export class RagisterPage {
   cnfpasswordtype:string='password';
   cnfpasseye:string='eye';
   passeye:string ='eye';
+  role: AbstractControl;
+  phone: AbstractControl;
   constructor(public navCtrl: NavController, public navParams: NavParams,public userService: UserProvider,public loadingCtrl: LoadingController,public toastCtrl : ToastController ,public fb: FormBuilder) {
     this.authForm = this.fb.group({
       'username' : [null, Validators.compose([Validators.required])],
       'email': [null, Validators.compose([Validators.required])],
+      'phone': [null, Validators.compose([Validators.required])],
+      'role': [null, Validators.compose([Validators.required])],
       'password': [null, Validators.compose([Validators.required])],
       'cnfpass': [null, Validators.compose([Validators.required])]
     });
     this.username = this.authForm.controls['username'];
     this.email = this.authForm.controls['email'];
+    this.phone = this.authForm.controls['phone'];
+    this.role = this.authForm.controls['role'];
     this.password = this.authForm.controls['password'];
     this.cnfpass = this.authForm.controls['cnfpass'];
   }
@@ -39,11 +45,11 @@ export class RagisterPage {
   doSignup(){
 
     let toaster = this.toastCtrl.create({
-      message: 'Error Code ',
+      message: 'Error Code',
       duration:3000,
       position:'bottom'
     });
-    if(this.newuser.email == '' || this.newuser.password == '' || this.newuser.username == ''){
+    if(this.newuser.email == '' || this.newuser.password == '' || this.newuser.username == ''|| this.newuser.role == ''|| this.newuser.phone == ''){
       toaster.setMessage('All field are Required!');
       toaster.present();
     }else if(this.newuser.password.length < 7){

@@ -83,6 +83,7 @@ export class ChatProvider {
   getbuddymessages() {
     let temp;
     this.firebuddychats.child(firebase.auth().currentUser.uid).child(this.buddy.uid).on('value', (snapshot) => {
+      console.log(firebase.auth().currentUser.uid);
       this.buddymessages = [];
       temp = snapshot.val();
 
@@ -93,6 +94,7 @@ export class ChatProvider {
       this.events.publish('newmessage');
     })
   }
+  
   getbuddyStatus(){
     let tmpStatus;
 

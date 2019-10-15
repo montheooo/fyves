@@ -31,6 +31,24 @@
                   <ion-label><ion-icon ios="ios-mail" md="md-mail"></ion-icon></ion-label>
                   <ion-input id="email" type="email" [formControl]="email" placeholder="Email" name="email" [(ngModel)]="newuser.email"></ion-input>
                 </ion-item>
+              
+              <ion-item>
+                <ion-label><ion-icon ios="ios-call" md="md-call"></ion-icon></ion-label>
+                <ion-input id="phone" type="phone" [formControl]="phone" placeholder="entrez votre numero de telephone" name="phone" [(ngModel)]="newuser.phone"></ion-input>
+              </ion-item>
+
+                 <ion-list>
+              <ion-item>
+                <ion-label>choisir un role</ion-label>
+                <ion-select id="role" type="role" [formControl]="role" placeholder="" name="role" [(ngModel)]="newuser.role">
+                  <ion-option value="Administrateur">Administrateur</ion-option>
+                  <ion-option  value="personnel">personnel</ion-option>
+                  <ion-option value="Client">Client</ion-option>
+                  <ion-option  value="Superviseur">Superviseur</ion-option>
+          
+                </ion-select>
+              </ion-item>
+            </ion-list>
                 <ion-item>
                     <ion-label><ion-icon ios="ios-unlock" md="md-unlock"></ion-icon></ion-label>
                     <ion-input id="password" [formControl]="password" type="{{passwordtype}}"  placeholder="Password" name="password" [(ngModel)]="newuser.password"></ion-input>]

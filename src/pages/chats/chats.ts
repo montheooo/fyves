@@ -5,7 +5,7 @@ import { ChatProvider } from '../../providers/chat/chat';
 import { UserProvider } from '../../providers/user/user';
 
 import { ImagehandlerProvider } from '../../providers/imagehandler/imagehandler';
-import firebase from 'firebase';
+import firebase, { UserInfo } from 'firebase';
 
 
 @IonicPage()
@@ -16,6 +16,7 @@ import firebase from 'firebase';
 export class ChatsPage {
   myrequests;
   myfriends;
+  user: any;
   // messagecounter;
   requestcounter=null;
   username : string;
@@ -32,6 +33,7 @@ export class ChatsPage {
   }
 
   ionViewWillEnter() {
+  
     let loader = this.loadingCtrl.create({
       content: 'Please wait'
     });
@@ -40,6 +42,7 @@ export class ChatsPage {
     this.requestservice.getmyrequests();
     this.requestservice.getmyfriends();
      this.loaduserdetails();
+     console.log(this.user);
 
     this.myfriends = [];
     this.events.subscribe('gotrequests', () => {

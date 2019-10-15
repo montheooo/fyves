@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Platform, Nav } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform, Nav, Events } from 'ionic-angular';
 import { EmailService } from '../../providers/home/email.service';
 import { CallService } from '../../providers/home/call.service';
 import { MapsService } from '../../providers/home/maps.service';
@@ -9,10 +9,13 @@ import { Tile } from './models/tile.model';
 import { GeofencePage } from '../geofence/geofence';
 import { MapPage } from '../map/map';
 import { BuddiesPage } from '../buddies/buddies';
+import { MenuController } from 'ionic-angular';
 
 import * as firebase from 'Firebase';
 import { FCM } from '@ionic-native/fcm';
-
+import { MyApp } from '../../app/app.component';
+import { UserInfo } from 'firebase/app';
+import { UserProvider } from '../../providers/user/user';
 /**
  * Generated class for the HomePage page.
  *
@@ -33,23 +36,47 @@ export class HomePage {
 	private browserService: InAppBrowserService;
 	private nav: Nav;
 	
+	
 //	private ref = firebase.database().ref();
 //	private Geofences = [] ;
 //	private email : string 
   public tiles: Tile[][];
-
+	role: string;
+	
 
   constructor(public platform: Platform,
 		callService: CallService,
 		mapsService: MapsService,
 		browserService: InAppBrowserService,
 		nav: Nav,
-		private fcm: FCM
+		private fcm: FCM,
+		public menuCtrl: MenuController,
+		public userservice: UserProvider,
+		public events: Events,
+		
 ) {
+	//this.myp.getrole();
+	this.userservice.getuserdetails().then((value:UserInfo)=>{
+        console.log(value.role);
+		this.role=value.role;
+	  });
+
+	  console.log(this.role);
+
+	
+	
   }
 
   ionViewDidLoad() {
-		console.log('ionViewDidLoad HomePage');
+		console.log('ionViewDidLoad HomePage la vue est charge');
+
+		this.userservice.getuserdetails().then((value:UserInfo)=>{
+			console.log(value.role);
+			this.events.publish('test',value.role, Date.now());
+		  });
+
+		
+		
 		this.fcm.subscribeToTopic('marketing');
 
       this.fcm.getToken().then(token => {

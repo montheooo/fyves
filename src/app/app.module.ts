@@ -30,12 +30,13 @@ import { ChatsPageModule } from '../pages/chats/chats.module';
 
 import { FCM } from '@ionic-native/fcm';
 import { TokenProvider } from '../providers/chat/token';
+import { AllUsersPageModule } from '../pages/all-users/all-users.module';
 
 
 
 @NgModule({
   declarations: [
-    MyApp,
+   MyApp,
   ],
   imports: [
     BrowserModule,
@@ -43,13 +44,15 @@ import { TokenProvider } from '../providers/chat/token';
     GeofencePageModule,
     BuddiesPageModule,
     ChatsPageModule,
+    AllUsersPageModule,
     AngularFireModule.initializeApp(config),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+  
   ],
   providers: [
+    MyApp,
     StatusBar,
     SplashScreen,
     AngularFireAuth,
