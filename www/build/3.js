@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 842:
+/***/ 846:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfilepicPageModule", function() { return ProfilepicPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profilepic__ = __webpack_require__(850);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profilepic__ = __webpack_require__(854);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var ProfilepicPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 850:
+/***/ 854:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46,7 +46,7 @@ var ProfilepicPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_imagehandler_imagehandler__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_user__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_user__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -115,7 +115,7 @@ var ProfilepicPage = /** @class */ (function () {
     };
     ProfilepicPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-profilepic',template:/*ion-inline-start:"C:\final\test\fyves-sap-test\src\pages\profilepic\profilepic.html"*/'<ion-content class="bg-img">\n\n  <div class="profile-image">\n\n  <img src="{{imgurl}}">\n\n  {{imgUrl}}\n\n  </div>\n\n  <div>\n\n      <button ion-button round outline color="btn-white" (click)="choseImage()">Choose a Image </button>\n\n  </div>\n\n  <div [hidden]="!moveon">\n\n      <button ion-button round outline color="btn-white" (click)="proceed()">Skip this Step</button>\n\n  </div>\n\n  <div [hidden]="moveon">\n\n      <button ion-button round outline color="btn-white" (click)="updateproceed()">Upload and Proceed</button>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\final\test\fyves-sap-test\src\pages\profilepic\profilepic.html"*/,
+            selector: 'page-profilepic',template:/*ion-inline-start:"C:\final\test\fyves-sap-final\src\pages\profilepic\profilepic.html"*/'<ion-content class="bg-img">\n\n  <div class="profile-image">\n\n  <img src="{{imgurl}}">\n\n  {{imgUrl}}\n\n  </div>\n\n  <div>\n\n      <button ion-button round outline color="btn-white" (click)="choseImage()">Choose a Image </button>\n\n  </div>\n\n  <div [hidden]="!moveon">\n\n      <button ion-button round outline color="btn-white" (click)="proceed()">Skip this Step</button>\n\n  </div>\n\n  <div [hidden]="moveon">\n\n      <button ion-button round outline color="btn-white" (click)="updateproceed()">Upload and Proceed</button>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\final\test\fyves-sap-final\src\pages\profilepic\profilepic.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_imagehandler_imagehandler__["a" /* ImagehandlerProvider */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */], __WEBPACK_IMPORTED_MODULE_3__providers_user_user__["a" /* UserProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
     ], ProfilepicPage);

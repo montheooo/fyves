@@ -31,6 +31,12 @@ import { ChatsPageModule } from '../pages/chats/chats.module';
 import { FCM } from '@ionic-native/fcm';
 import { TokenProvider } from '../providers/chat/token';
 import { AllUsersPageModule } from '../pages/all-users/all-users.module';
+import { Geolocation } from '@ionic-native/geolocation';
+import { Geofence } from '@ionic-native/geofence';
+import { Device } from '@ionic-native/device/ngx';
+import { HttpClientModule, HttpClient, HttpHandler } from '@angular/common/http';
+import { BackgroundGeolocation, BackgroundGeolocationConfig, BackgroundGeolocationResponse } from '@ionic-native/background-geolocation';
+
 
 
 
@@ -68,8 +74,18 @@ import { AllUsersPageModule } from '../pages/all-users/all-users.module';
     ChatProvider,
     ChatProvider,
     EmailService,
+    Geolocation,
+    Geofence,
+    Device,
+    HttpClient,
+    HttpClientModule,
+    Geolocation,
+    AngularFireAuth,
+    AuthProvider,
     MapsService,
     CallService,
+    //HttpHandler,
+
     InAppBrowserService,
     FCM,
     TokenProvider

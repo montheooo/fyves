@@ -33381,6 +33381,15 @@ ion-navbar.toolbar {
   text-align: center;
 }
 
+page-all-users ion-col.test {
+  margin: 0 0;
+  width: 15%;
+  position: relative;
+  font-size: 11px;
+  padding: 0;
+  margin-right: 0px;
+}
+
 page-buddies .list-md[no-lines] .item .item-inner {
   margin-right: 15px;
   border-width: 1px;
@@ -33672,6 +33681,10 @@ page-chats .msg-notification {
   content: '';
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+page-geofence #map {
+  height: 100%;
 }
 
 .getting-started .home-hello {
