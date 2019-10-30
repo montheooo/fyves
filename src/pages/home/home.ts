@@ -56,7 +56,7 @@ export class HomePage {
 		
 ) {
 	//this.myp.getrole();
-	this.userservice.getuserdetails().then((value:UserInfo)=>{
+	this.userservice.getuserdetails().then((value:any)=>{
         console.log(value.role);
 		this.role=value.role;
 	  });
@@ -70,7 +70,7 @@ export class HomePage {
   ionViewDidLoad() {
 		console.log('ionViewDidLoad HomePage la vue est charge');
 
-		this.userservice.getuserdetails().then((value:UserInfo)=>{
+		this.userservice.getuserdetails().then((value:any)=>{
 			console.log(value.role);
 			this.events.publish('test',value.role, Date.now());
 		  });

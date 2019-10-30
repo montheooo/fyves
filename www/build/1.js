@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 849:
+/***/ 848:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RequestPageModule", function() { return RequestPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__request__ = __webpack_require__(857);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__request__ = __webpack_require__(856);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var RequestPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 857:
+/***/ 856:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98,7 +98,7 @@ var RequestPage = /** @class */ (function () {
     };
     RequestPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-request',template:/*ion-inline-start:"C:\final\test\fyves-sap-final\src\pages\request\request.html"*/'<ion-content >\n\n  <ion-list >\n\n    <ion-list-header>\n\n       Requests\n\n     <button ion-button icon-only clear end (click)="close()" style="margin-left: 62%;margin-bottom: 7%;color: black;"><ion-icon name="close"></ion-icon></button>\n\n    </ion-list-header>\n\n    <ion-item class="request-info" *ngFor="let item of myrequests">\n\n      <ion-item class="request-wrap">\n\n        <ion-avatar item-left><img src="{{item.photoURL}}"></ion-avatar><h4>{{item.displayName}}</h4>\n\n        <button ion-button icon-only clear color="secondary" (click)="accept(item)" item-right><ion-icon name="checkmark"></ion-icon></button>\n\n        <button ion-button  icon-only clear color="danger" (click)="ignore(item)" item-right><ion-icon name="close"></ion-icon></button>\n\n      </ion-item>\n\n    </ion-item>\n\n    <ion-item *ngIf="!myrequests || myrequests == \'\'">\n\n      <ion-label>No Request!</ion-label>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\final\test\fyves-sap-final\src\pages\request\request.html"*/,
+            selector: 'page-request',template:/*ion-inline-start:"C:\appp\fyves-sap-final\src\pages\request\request.html"*/'<ion-content >\n\n  <ion-list >\n\n    <ion-list-header>\n\n       Requests\n\n     <button ion-button icon-only clear end (click)="close()" style="margin-left: 62%;margin-bottom: 7%;color: black;"><ion-icon name="close"></ion-icon></button>\n\n    </ion-list-header>\n\n    <ion-item class="request-info" *ngFor="let item of myrequests">\n\n      <ion-item class="request-wrap">\n\n        <ion-avatar item-left><img src="{{item.photoURL}}"></ion-avatar><h4>{{item.displayName}}</h4>\n\n        <button ion-button icon-only clear color="secondary" (click)="accept(item)" item-right><ion-icon name="checkmark"></ion-icon></button>\n\n        <button ion-button  icon-only clear color="danger" (click)="ignore(item)" item-right><ion-icon name="close"></ion-icon></button>\n\n      </ion-item>\n\n    </ion-item>\n\n    <ion-item *ngIf="!myrequests || myrequests == \'\'">\n\n      <ion-label>No Request!</ion-label>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\appp\fyves-sap-final\src\pages\request\request.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */], __WEBPACK_IMPORTED_MODULE_2__providers_requests_requests__["a" /* RequestsProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], RequestPage);

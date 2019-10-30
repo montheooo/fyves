@@ -21,7 +21,7 @@ export class UserProvider {
     var promise = new Promise((resolve , reject) => {
         this.afireAuth.auth.createUserWithEmailAndPassword(newuser.email, newuser.password).then(()=>{
           this.afireAuth.auth.currentUser.updateProfile({
-             displayName: newuser.username, phone:newuser.phone, role:newuser.role,
+             displayName: newuser.username,
              photoURL: 'https://www.limestone.edu/sites/default/files/user.png'
           }).then(() => {
             this.firedata.child(this.afireAuth.auth.currentUser.uid).set({
@@ -48,8 +48,6 @@ export class UserProvider {
       var promise = new Promise((resolve, reject) => {
           this.afireAuth.auth.currentUser.updateProfile({
               displayName: this.afireAuth.auth.currentUser.displayName,
-              phone:this.afireAuth.auth.currentUser.phone, 
-              role:this.afireAuth.auth.currentUser.role,
               photoURL: imageurl
           }).then(() => {
             this.firedata.child(this.afireAuth.auth.currentUser.uid).update({photoURL:imageurl}).then(() => {
@@ -83,8 +81,6 @@ export class UserProvider {
       var promise = new Promise((resolve, reject) => {
         this.afireAuth.auth.currentUser.updateProfile({
         displayName: newname,
-        phone:newphone, 
-        role:newrole,
         photoURL: this.afireAuth.auth.currentUser.photoURL
       }).then(() => {
         this.firedata.child(firebase.auth().currentUser.uid).update({

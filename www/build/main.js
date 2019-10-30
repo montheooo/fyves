@@ -152,14 +152,14 @@ var RequestsProvider = /** @class */ (function () {
 /* unused harmony export snapshotToArray */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_device_ngx__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_device_ngx__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Firebase__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Firebase__ = __webpack_require__(399);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_Firebase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_geofence__ = __webpack_require__(396);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_geolocation__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_geofence__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_geolocation__ = __webpack_require__(401);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_auth_auth__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_home_email_service__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_home_email_service__ = __webpack_require__(402);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -371,7 +371,7 @@ var GeofencePage = /** @class */ (function () {
     ], GeofencePage.prototype, "mapElement", void 0);
     GeofencePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-geofence',template:/*ion-inline-start:"C:\final\test\fyves-sap-final\src\pages\geofence\geofence.html"*/'<!--\n\n  Generated template for the GeofencePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle >\n\n			<ion-icon name="menu"></ion-icon>\n\n		</button>\n\n		<ion-title>Fyves SAP</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content> \n\n-->\n\n\n\n<!--\n\n  Generated template for the AddGeofencePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n      <ion-title>Ajouter un lieu</ion-title>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  \n\n  <ion-list>\n\n  <ion-item>\n\n      <ion-input [(ngModel)]="data.notificationText" type="text" placeholder="nom du lieu" ></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>type d\'evènement</ion-label>\n\n      <ion-select [(ngModel)]="data.transitionType" type="number">\n\n        <ion-option value="1">Entrée dans la zone</ion-option>\n\n        <ion-option value="2">Sortie de la Zone</ion-option>\n\n        <ion-option value="3">Entrée ou Sortie de la zone </ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n    <ion-item>\n\n        <ion-label>couverture de la zone</ion-label>\n\n      <ion-range min="20" max="100" [(ngModel)]="data.radius"   secondary>\n\n        <ion-label range-left>on</ion-label>\n\n        <ion-label range-right>{{data.radius}}m</ion-label>\n\n      </ion-range>\n\n    </ion-item>\n\n    <ion-item>\n\n        <button ion-button full round color="secondary" type="submit" (click)="addGeofence()">Ajouter</button>\n\n      </ion-item>\n\n  </ion-list>\n\n  \n\n\n\n\n\n  <div #map id="map"></div>\n\n\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\final\test\fyves-sap-final\src\pages\geofence\geofence.html"*/,
+            selector: 'page-geofence',template:/*ion-inline-start:"C:\appp\fyves-sap-final\src\pages\geofence\geofence.html"*/'<!--\n\n  Generated template for the GeofencePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle >\n\n			<ion-icon name="menu"></ion-icon>\n\n		</button>\n\n		<ion-title>Fyves SAP</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content> \n\n-->\n\n\n\n<!--\n\n  Generated template for the AddGeofencePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n      <ion-title>Ajouter un lieu</ion-title>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  \n\n  <ion-list>\n\n  <ion-item>\n\n      <ion-input [(ngModel)]="data.notificationText" type="text" placeholder="nom du lieu" ></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>type d\'evènement</ion-label>\n\n      <ion-select [(ngModel)]="data.transitionType" type="number">\n\n        <ion-option value="1">Entrée dans la zone</ion-option>\n\n        <ion-option value="2">Sortie de la Zone</ion-option>\n\n        <ion-option value="3">Entrée ou Sortie de la zone </ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n    <ion-item>\n\n        <ion-label>couverture de la zone</ion-label>\n\n      <ion-range min="20" max="100" [(ngModel)]="data.radius"   secondary>\n\n        <ion-label range-left>on</ion-label>\n\n        <ion-label range-right>{{data.radius}}m</ion-label>\n\n      </ion-range>\n\n    </ion-item>\n\n    <ion-item>\n\n        <button ion-button full round color="secondary" type="submit" (click)="addGeofence()">Ajouter</button>\n\n      </ion-item>\n\n  </ion-list>\n\n  \n\n\n\n\n\n  <div #map id="map"></div>\n\n\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\appp\fyves-sap-final\src\pages\geofence\geofence.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */],
@@ -406,12 +406,12 @@ var snapshotToArray = function (snapshot) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImagehandlerProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_file__ = __webpack_require__(386);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file_path__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_chooser__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_file__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file_path__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_chooser__ = __webpack_require__(391);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_firebase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_crop__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_crop__ = __webpack_require__(392);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -806,7 +806,7 @@ var MapPage = /** @class */ (function () {
     };
     MapPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-map',template:/*ion-inline-start:"C:\final\test\fyves-sap-final\src\pages\map\map.html"*/'<!--\n\n  Generated template for the MapPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>map</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\final\test\fyves-sap-final\src\pages\map\map.html"*/,
+            selector: 'page-map',template:/*ion-inline-start:"C:\appp\fyves-sap-final\src\pages\map\map.html"*/'<!--\n\n  Generated template for the MapPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>map</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\appp\fyves-sap-final\src\pages\map\map.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], MapPage);
@@ -839,20 +839,20 @@ webpackEmptyAsyncContext.id = 201;
 
 var map = {
 	"../pages/all-users/all-users.module": [
-		401
+		246
 	],
 	"../pages/buddies/buddies.module": [
-		246
+		386
 	],
 	"../pages/buddychat/buddychat.module": [
 		840,
 		7
 	],
 	"../pages/chats/chats.module": [
-		404
+		393
 	],
 	"../pages/geofence/geofence.module": [
-		403
+		405
 	],
 	"../pages/groups/groups.module": [
 		841,
@@ -879,15 +879,15 @@ var map = {
 		3
 	],
 	"../pages/ragister/ragister.module": [
-		848,
+		847,
 		2
 	],
 	"../pages/request/request.module": [
-		849,
+		848,
 		1
 	],
 	"../pages/tabs/tabs.module": [
-		847,
+		849,
 		0
 	]
 };
@@ -912,10 +912,106 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllUsersPageModule", function() { return AllUsersPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__all_users__ = __webpack_require__(247);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var AllUsersPageModule = /** @class */ (function () {
+    function AllUsersPageModule() {
+    }
+    AllUsersPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__all_users__["a" /* AllUsersPage */]],
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__all_users__["a" /* AllUsersPage */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicModule */]]
+        })
+    ], AllUsersPageModule);
+    return AllUsersPageModule;
+}());
+
+//# sourceMappingURL=all-users.module.js.map
+
+/***/ }),
+
+/***/ 247:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllUsersPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_user_user__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the AllUsersPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AllUsersPage = /** @class */ (function () {
+    function AllUsersPage(navCtrl, navParams, userService, loadingCtrl, toastCtrl, fb) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.userService = userService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.fb = fb;
+        this.userService.getallusers().then(function (allusers) {
+            _this.users = allusers;
+            console.log(_this.users);
+        });
+    }
+    AllUsersPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad RagisterPage');
+    };
+    AllUsersPage.prototype.doSignup = function () {
+        this.navCtrl.push('RagisterPage');
+    };
+    AllUsersPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
+            selector: 'page-all-users',template:/*ion-inline-start:"C:\appp\fyves-sap-final\src\pages\all-users\all-users.html"*/'<!--\n\n  Generated template for the AllUsersPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>all_users <ion-icon ios="ios-add-circle" md="md-add-circle" rigth (click)="doSignup()"></ion-icon></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content  >\n\n\n\n<ion-list>\n\n <!-- <ion-item *ngFor="let u of users">\n\n    <ion-icon color="primary"  [name]="md-add-circle" item-rigth></ion-icon>\n\n    <p>{{u.displayName}}</p><p>{{u.role}}</p>\n\n  </ion-item>\n\n-->\n\n  <ion-grid>\n\n    <ion-row *ngFor="let u of users">\n\n      <ion-col class=\'test\'><p>{{u.displayName}}</p></ion-col>\n\n      <ion-col class=\'test\'><p>{{u.email}}</p></ion-col>\n\n      <ion-col class=\'test\'><p>{{u.role}}</p></ion-col>\n\n      <ion-col class=\'test\'><p>{{u.phone}}</p></ion-col>\n\n      <ion-col class=\'test\'><p> <ion-icon ios="ios-trash" md="md-trash" col-left></ion-icon><ion-icon ios="ios-create" md="md-create"></ion-icon></p></ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-list>\n\n\n\n<ion-list >\n\n  <ion-grid no-padding>\n\n    <ion-row *ngFor="let u of users" align-items-end>\n\n      <ion-col col-2 text-wrap >\n\n        <ion-item class=\'my-thin-col\'>\n\n          <ion-label >{{u.displayName}}</ion-label>\n\n        </ion-item>\n\n      </ion-col>\n\n      <ion-col col-3 text-wrap>\n\n        <ion-item class="value-column-remove-padding">\n\n          <ion-label class="value-font-style">{{u.role}}</ion-label>\n\n        </ion-item>\n\n      </ion-col>\n\n      <ion-col col-2 text-wrap>\n\n        <ion-item class="value-column-remove-padding">\n\n          <ion-label class="value-font-style">{{u.phone}}</ion-label>\n\n        </ion-item>\n\n      </ion-col>\n\n      <ion-col col-3 text-wrap>\n\n        <ion-item class="value-column-remove-padding">\n\n          <ion-label class="value-font-style">{{u.phone}}</ion-label>\n\n        </ion-item>\n\n      </ion-col>\n\n      <ion-col col-2 text-wrap>\n\n        <ion-item class="value-column-remove-padding">\n\n          <ion-icon ios="ios-trash" md="md-trash" padding></ion-icon><ion-icon ios="ios-create" md="md-create"></ion-icon>\n\n        </ion-item>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\appp\fyves-sap-final\src\pages\all-users\all-users.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1__providers_user_user__["a" /* UserProvider */], __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["o" /* ToastController */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]])
+    ], AllUsersPage);
+    return AllUsersPage;
+}());
+
+//# sourceMappingURL=all-users.js.map
+
+/***/ }),
+
+/***/ 386:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BuddiesPageModule", function() { return BuddiesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buddies__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buddies__ = __webpack_require__(387);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -945,7 +1041,7 @@ var BuddiesPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 247:
+/***/ 387:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1033,7 +1129,7 @@ var BuddiesPage = /** @class */ (function () {
     };
     BuddiesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-buddies',template:/*ion-inline-start:"C:\final\test\fyves-sap-final\src\pages\buddies\buddies.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle >\n\n			<ion-icon name="menu"></ion-icon>\n\n		</button>\n\n		<ion-title>Invitations</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n  <ion-searchbar [(ngModel)]="searchstring" (input)="searchuser($event)" placeholder="Search"></ion-searchbar>\n\n<ion-list>\n\n    <ion-item *ngFor="let key of filteredusers">\n\n        <ion-avatar item-start><img src="{{key.photoURL}}"></ion-avatar>\n\n        <h2>{{key.displayName}}</h2>\n\n        <button ion-button item-end outline color="primary" (click)="sendreq(key)"><ion-icon name="person-add"></ion-icon>Envoyer</button>\n\n    </ion-item>\n\n\n\n</ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\final\test\fyves-sap-final\src\pages\buddies\buddies.html"*/,
+            selector: 'page-buddies',template:/*ion-inline-start:"C:\appp\fyves-sap-final\src\pages\buddies\buddies.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle >\n\n			<ion-icon name="menu"></ion-icon>\n\n		</button>\n\n		<ion-title>Invitations</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n  <ion-searchbar [(ngModel)]="searchstring" (input)="searchuser($event)" placeholder="Search"></ion-searchbar>\n\n<ion-list>\n\n    <ion-item *ngFor="let key of filteredusers">\n\n        <ion-avatar item-start><img src="{{key.photoURL}}"></ion-avatar>\n\n        <h2>{{key.displayName}}</h2>\n\n        <button ion-button item-end outline color="primary" (click)="sendreq(key)"><ion-icon name="person-add"></ion-icon>Envoyer</button>\n\n    </ion-item>\n\n\n\n</ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\appp\fyves-sap-final\src\pages\buddies\buddies.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_user_user__["a" /* UserProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__providers_requests_requests__["a" /* RequestsProvider */]])
     ], BuddiesPage);
@@ -1044,310 +1140,7 @@ var BuddiesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 391:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CallService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var CallService = /** @class */ (function () {
-    function CallService() {
-    }
-    CallService.prototype.call = function (phoneNumber) {
-        window.location.href = 'tel:' + phoneNumber;
-    };
-    CallService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])()
-    ], CallService);
-    return CallService;
-}());
-
-//# sourceMappingURL=call.service.js.map
-
-/***/ }),
-
-/***/ 392:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapsService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var MapsService = /** @class */ (function () {
-    function MapsService(platform) {
-        this.platform = platform;
-    }
-    MapsService.prototype.openMapsApp = function (location) {
-        var q;
-        if (this.platform.is('android')) {
-            q = 'geo:' + location;
-        }
-        else {
-            q = 'maps://maps.apple.com/?q=' + location;
-        }
-        window.location.href = q;
-    };
-    MapsService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */]])
-    ], MapsService);
-    return MapsService;
-}());
-
-//# sourceMappingURL=maps.service.js.map
-
-/***/ }),
-
 /***/ 393:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InAppBrowserService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var InAppBrowserService = /** @class */ (function () {
-    function InAppBrowserService() {
-    }
-    InAppBrowserService.prototype.open = function (url) {
-        window.open(url, '_system', 'location=yes');
-        return false;
-    };
-    InAppBrowserService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])()
-    ], InAppBrowserService);
-    return InAppBrowserService;
-}());
-
-//# sourceMappingURL=in-app-browser.service.js.map
-
-/***/ }),
-
-/***/ 398:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export Email */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var Email = /** @class */ (function () {
-    function Email() {
-    }
-    return Email;
-}());
-
-var EmailService = /** @class */ (function () {
-    function EmailService(http) {
-        this.http = http;
-        this.url = 'http://www.intelcameroun.net/fyvessapback/index.php';
-    }
-    EmailService.prototype.sendEmail = function (data) {
-        var _this = this;
-        return new Promise(function (resolve, reject) {
-            _this.http.post(_this.url + '/send_email', JSON.stringify(data), { responseType: 'text' })
-                .subscribe(function (res) {
-                console.log(res);
-                resolve(res);
-            }, function (err) {
-                console.log(err);
-                reject(err);
-            });
-        });
-    };
-    EmailService.prototype.sendEmail2 = function (data) {
-        var _this = this;
-        return new Promise(function (resolve, reject) {
-            _this.http.post(_this.url + '/send_email2', JSON.stringify(data), { responseType: 'text' })
-                .subscribe(function (res) {
-                console.log(res);
-                resolve(res);
-            }, function (err) {
-                console.log(err);
-                reject(err);
-            });
-        });
-    };
-    EmailService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
-    ], EmailService);
-    return EmailService;
-}());
-
-//# sourceMappingURL=email.service.js.map
-
-/***/ }),
-
-/***/ 401:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllUsersPageModule", function() { return AllUsersPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__all_users__ = __webpack_require__(402);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var AllUsersPageModule = /** @class */ (function () {
-    function AllUsersPageModule() {
-    }
-    AllUsersPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_2__all_users__["a" /* AllUsersPage */]],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__all_users__["a" /* AllUsersPage */]],
-            imports: [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicModule */]]
-        })
-    ], AllUsersPageModule);
-    return AllUsersPageModule;
-}());
-
-//# sourceMappingURL=all-users.module.js.map
-
-/***/ }),
-
-/***/ 402:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllUsersPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_user_user__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the AllUsersPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var AllUsersPage = /** @class */ (function () {
-    function AllUsersPage(navCtrl, navParams, userService, loadingCtrl, toastCtrl, fb) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.userService = userService;
-        this.loadingCtrl = loadingCtrl;
-        this.toastCtrl = toastCtrl;
-        this.fb = fb;
-        this.userService.getallusers().then(function (allusers) {
-            _this.users = allusers;
-            console.log(_this.users);
-        });
-    }
-    AllUsersPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad RagisterPage');
-    };
-    AllUsersPage.prototype.doSignup = function () {
-        this.navCtrl.push('RagisterPage');
-    };
-    AllUsersPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'page-all-users',template:/*ion-inline-start:"C:\final\test\fyves-sap-final\src\pages\all-users\all-users.html"*/'<!--\n  Generated template for the AllUsersPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>all_users <ion-icon ios="ios-add-circle" md="md-add-circle" rigth (click)="doSignup()"></ion-icon></ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content  >\n\n<ion-list>\n <!-- <ion-item *ngFor="let u of users">\n    <ion-icon color="primary"  [name]="md-add-circle" item-rigth></ion-icon>\n    <p>{{u.displayName}}</p><p>{{u.role}}</p>\n  </ion-item>\n-->\n  <ion-grid>\n    <ion-row *ngFor="let u of users">\n      <ion-col class=\'test\'><p>{{u.displayName}}</p></ion-col>\n      <ion-col class=\'test\'><p>{{u.email}}</p></ion-col>\n      <ion-col class=\'test\'><p>{{u.role}}</p></ion-col>\n      <ion-col class=\'test\'><p>{{u.phone}}</p></ion-col>\n      <ion-col class=\'test\'><p> <ion-icon ios="ios-trash" md="md-trash" col-left></ion-icon><ion-icon ios="ios-create" md="md-create"></ion-icon></p></ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-list>\n\n<ion-list >\n  <ion-grid no-padding>\n    <ion-row *ngFor="let u of users" align-items-end>\n      <ion-col col-2 text-wrap >\n        <ion-item class=\'my-thin-col\'>\n          <ion-label >{{u.displayName}}</ion-label>\n        </ion-item>\n      </ion-col>\n      <ion-col col-3 text-wrap>\n        <ion-item class="value-column-remove-padding">\n          <ion-label class="value-font-style">{{u.role}}</ion-label>\n        </ion-item>\n      </ion-col>\n      <ion-col col-2 text-wrap>\n        <ion-item class="value-column-remove-padding">\n          <ion-label class="value-font-style">{{u.phone}}</ion-label>\n        </ion-item>\n      </ion-col>\n      <ion-col col-3 text-wrap>\n        <ion-item class="value-column-remove-padding">\n          <ion-label class="value-font-style">{{u.phone}}</ion-label>\n        </ion-item>\n      </ion-col>\n      <ion-col col-2 text-wrap>\n        <ion-item class="value-column-remove-padding">\n          <ion-icon ios="ios-trash" md="md-trash" padding></ion-icon><ion-icon ios="ios-create" md="md-create"></ion-icon>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\final\test\fyves-sap-final\src\pages\all-users\all-users.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1__providers_user_user__["a" /* UserProvider */], __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["o" /* ToastController */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]])
-    ], AllUsersPage);
-    return AllUsersPage;
-}());
-
-//# sourceMappingURL=all-users.js.map
-
-/***/ }),
-
-/***/ 403:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeofencePageModule", function() { return GeofencePageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__geofence__ = __webpack_require__(165);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var GeofencePageModule = /** @class */ (function () {
-    function GeofencePageModule() {
-    }
-    GeofencePageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_2__geofence__["a" /* GeofencePage */]],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__geofence__["a" /* GeofencePage */]],
-            imports: [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicModule */]]
-        })
-    ], GeofencePageModule);
-    return GeofencePageModule;
-}());
-
-//# sourceMappingURL=geofence.module.js.map
-
-/***/ }),
-
-/***/ 404:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1355,7 +1148,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatsPageModule", function() { return ChatsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chats__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chats__ = __webpack_require__(394);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1385,7 +1178,7 @@ var ChatsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 405:
+/***/ 394:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1578,7 +1371,7 @@ var ChatsPage = /** @class */ (function () {
     };
     ChatsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-chats',template:/*ion-inline-start:"C:\final\test\fyves-sap-final\src\pages\chats\chats.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n\n      \n\n    <div class="profile-image-wrap">\n\n      <div class="profile-image"  (click)="editimage()">\n\n          <img src="{{avatar}}">\n\n      </div>\n\n      <button ion-button round  color="primary"  (click)="logout()">LOGOUT</button>\n\n    </div>\n\n    <div class="profile-info">\n\n      <div class="title">\n\n        <h2 (click)="editname()">{{username}}</h2>\n\n      </div>\n\n      <div class="subtitle">\n\n        Modifier votre nom d\'utilisateur ou votre photo de profil\n\n      </div>\n\n    </div>\n\n    <div class="spacer" style="height: 10px;"></div>\n\n    <div>\n\n      <!-- <button ion-button round outline color="danger" (click)="logout()">Logout</button> -->\n\n    </div>\n\n     <ion-buttons end>\n\n\n\n       <button ion-button icon-only (click)="presentPopover($event)">\n\n         <ion-icon name="notifications"></ion-icon><div class="notification" *ngIf="requestcounter != null">{{requestcounter}}</div>\n\n       </button>\n\n     </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n  <div *ngIf="myfriends == \'\' " class="backdropdiv">\n\n    <div class="focus-on">\n\n      <ion-fab bottom right>\n\n        <button ion-fab color="primary" (click)="addbuddy()"><ion-icon name="person-add"></ion-icon></button>\n\n      </ion-fab>\n\n    </div>\n\n    <div class="instrucation">\n\n      <p style="color:#fff;">Clicker pour démarrer une conversation</p>\n\n    <img src="assets/imgs/introarrrow.png">\n\n    </div>\n\n  </div>\n\n\n\n<div padding *ngIf="myfriends != \'\' ">\n\n  <ion-list no-lines >\n\n    <!-- <ion-list-header>Friends</ion-list-header> -->\n\n    <ion-item *ngFor="let item of myfriends" (click)="buddychat(item)">\n\n      <ion-avatar item-left>\n\n        <img src={{item.photoURL}}>\n\n      </ion-avatar>\n\n      <h3>{{item.displayName}}</h3>\n\n      <!-- <button ion-button round color="danger" item-right right *ngIf="messagecounter != 0">{{messagecounter}}</button> -->\n\n    </ion-item>\n\n  </ion-list>\n\n  <ion-fab bottom right>\n\n    <button ion-fab color="primary" (click)="addbuddy()"><ion-icon name="person-add"></ion-icon></button>\n\n  </ion-fab>\n\n</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\final\test\fyves-sap-final\src\pages\chats\chats.html"*/,
+            selector: 'page-chats',template:/*ion-inline-start:"C:\appp\fyves-sap-final\src\pages\chats\chats.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n\n      \n\n    <div class="profile-image-wrap">\n\n      <div class="profile-image"  (click)="editimage()">\n\n          <img src="{{avatar}}">\n\n      </div>\n\n      <button ion-button round  color="primary"  (click)="logout()">LOGOUT</button>\n\n    </div>\n\n    <div class="profile-info">\n\n      <div class="title">\n\n        <h2 (click)="editname()">{{username}}</h2>\n\n      </div>\n\n      <div class="subtitle">\n\n        Modifier votre nom d\'utilisateur ou votre photo de profil\n\n      </div>\n\n    </div>\n\n    <div class="spacer" style="height: 10px;"></div>\n\n    <div>\n\n      <!-- <button ion-button round outline color="danger" (click)="logout()">Logout</button> -->\n\n    </div>\n\n     <ion-buttons end>\n\n\n\n       <button ion-button icon-only (click)="presentPopover($event)">\n\n         <ion-icon name="notifications"></ion-icon><div class="notification" *ngIf="requestcounter != null">{{requestcounter}}</div>\n\n       </button>\n\n     </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n  <div *ngIf="myfriends == \'\' " class="backdropdiv">\n\n    <div class="focus-on">\n\n      <ion-fab bottom right>\n\n        <button ion-fab color="primary" (click)="addbuddy()"><ion-icon name="person-add"></ion-icon></button>\n\n      </ion-fab>\n\n    </div>\n\n    <div class="instrucation">\n\n      <p style="color:#fff;">Clicker pour démarrer une conversation</p>\n\n    <img src="assets/imgs/introarrrow.png">\n\n    </div>\n\n  </div>\n\n\n\n<div padding *ngIf="myfriends != \'\' ">\n\n  <ion-list no-lines >\n\n    <!-- <ion-list-header>Friends</ion-list-header> -->\n\n    <ion-item *ngFor="let item of myfriends" (click)="buddychat(item)">\n\n      <ion-avatar item-left>\n\n        <img src={{item.photoURL}}>\n\n      </ion-avatar>\n\n      <h3>{{item.displayName}}</h3>\n\n      <!-- <button ion-button round color="danger" item-right right *ngIf="messagecounter != 0">{{messagecounter}}</button> -->\n\n    </ion-item>\n\n  </ion-list>\n\n  <ion-fab bottom right>\n\n    <button ion-fab color="primary" (click)="addbuddy()"><ion-icon name="person-add"></ion-icon></button>\n\n  </ion-fab>\n\n</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\appp\fyves-sap-final\src\pages\chats\chats.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_requests_requests__["a" /* RequestsProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__providers_chat_chat__["a" /* ChatProvider */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* PopoverController */], __WEBPACK_IMPORTED_MODULE_5__providers_imagehandler_imagehandler__["a" /* ImagehandlerProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_user_user__["a" /* UserProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
     ], ChatsPage);
@@ -1589,6 +1382,213 @@ var ChatsPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 395:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CallService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var CallService = /** @class */ (function () {
+    function CallService() {
+    }
+    CallService.prototype.call = function (phoneNumber) {
+        window.location.href = 'tel:' + phoneNumber;
+    };
+    CallService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])()
+    ], CallService);
+    return CallService;
+}());
+
+//# sourceMappingURL=call.service.js.map
+
+/***/ }),
+
+/***/ 396:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapsService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MapsService = /** @class */ (function () {
+    function MapsService(platform) {
+        this.platform = platform;
+    }
+    MapsService.prototype.openMapsApp = function (location) {
+        var q;
+        if (this.platform.is('android')) {
+            q = 'geo:' + location;
+        }
+        else {
+            q = 'maps://maps.apple.com/?q=' + location;
+        }
+        window.location.href = q;
+    };
+    MapsService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */]])
+    ], MapsService);
+    return MapsService;
+}());
+
+//# sourceMappingURL=maps.service.js.map
+
+/***/ }),
+
+/***/ 397:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InAppBrowserService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var InAppBrowserService = /** @class */ (function () {
+    function InAppBrowserService() {
+    }
+    InAppBrowserService.prototype.open = function (url) {
+        window.open(url, '_system', 'location=yes');
+        return false;
+    };
+    InAppBrowserService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])()
+    ], InAppBrowserService);
+    return InAppBrowserService;
+}());
+
+//# sourceMappingURL=in-app-browser.service.js.map
+
+/***/ }),
+
+/***/ 402:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export Email */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Email = /** @class */ (function () {
+    function Email() {
+    }
+    return Email;
+}());
+
+var EmailService = /** @class */ (function () {
+    function EmailService(http) {
+        this.http = http;
+        this.url = 'http://www.intelcameroun.net/fyvessapback/index.php';
+    }
+    EmailService.prototype.sendEmail = function (data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.post(_this.url + '/send_email', JSON.stringify(data), { responseType: 'text' })
+                .subscribe(function (res) {
+                console.log(res);
+                resolve(res);
+            }, function (err) {
+                console.log(err);
+                reject(err);
+            });
+        });
+    };
+    EmailService.prototype.sendEmail2 = function (data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.post(_this.url + '/send_email2', JSON.stringify(data), { responseType: 'text' })
+                .subscribe(function (res) {
+                console.log(res);
+                resolve(res);
+            }, function (err) {
+                console.log(err);
+                reject(err);
+            });
+        });
+    };
+    EmailService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+    ], EmailService);
+    return EmailService;
+}());
+
+//# sourceMappingURL=email.service.js.map
+
+/***/ }),
+
+/***/ 405:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeofencePageModule", function() { return GeofencePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__geofence__ = __webpack_require__(165);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var GeofencePageModule = /** @class */ (function () {
+    function GeofencePageModule() {
+    }
+    GeofencePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__geofence__["a" /* GeofencePage */]],
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__geofence__["a" /* GeofencePage */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicModule */]]
+        })
+    ], GeofencePageModule);
+    return GeofencePageModule;
+}());
+
+//# sourceMappingURL=geofence.module.js.map
+
+/***/ }),
+
 /***/ 447:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1596,16 +1596,16 @@ var ChatsPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_home_call_service__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_home_maps_service__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_home_in_app_browser_service__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_home_call_service__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_home_maps_service__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_home_in_app_browser_service__ = __webpack_require__(397);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_data__ = __webpack_require__(814);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__geofence_geofence__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__map_map__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__buddies_buddies__ = __webpack_require__(247);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_Firebase__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__buddies_buddies__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_Firebase__ = __webpack_require__(399);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_Firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_Firebase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_fcm__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_fcm__ = __webpack_require__(404);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_user_user__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1727,7 +1727,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\final\test\fyves-sap-final\src\pages\home\home.html"*/'<!--\n\n  Generated template for the HomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle >\n\n			<ion-icon name="menu"></ion-icon>\n\n		</button>\n\n		<ion-title>Fyves SAP</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content class="getting-started">\n\n	<div class="home-hello">\n\n		<img src="assets/imgs/home.png" />\n\n\n\n<!--	<div class="hello-title" text-wrap>\n\n			<h1>FYVES SAP</h1>\n\n			Une nouvelle vision des affaires !\n\n		</div>     -->\n\n	</div>\n\n\n\n	\n\n\n\n	<ion-row *ngFor="let tilePair of tiles">\n\n		<ion-col *ngFor="let tile of tilePair">\n\n			<ion-card class="tile" (click)="navigateTo(tile)">\n\n				<ion-card-content>\n\n					<ion-item>\n\n						<h1><ion-icon color="primary" [name]="tile.icon"></ion-icon></h1>\n\n						<h2>{{tile.title}}</h2>\n\n					</ion-item>\n\n				</ion-card-content>\n\n			</ion-card>\n\n		</ion-col>\n\n	</ion-row>\n\n\n\n\n\n\n\n	<ion-row>\n\n		<ion-card class="quick-action" (click)="callUs()">\n\n			<ion-card-content>\n\n				<ion-icon name="phone-portrait"></ion-icon>\n\n				<span>Call us</span>\n\n			</ion-card-content>\n\n		</ion-card>\n\n	</ion-row>\n\n\n\n	<ion-row>\n\n		<ion-card class="quick-action" (click)="sendEmail()">\n\n			<ion-card-content>\n\n				<ion-icon name="mail"></ion-icon>\n\n				<span>contact@fyvesconsulting.com</span>\n\n			</ion-card-content>\n\n		</ion-card>\n\n	</ion-row>\n\n\n\n	<ion-row>\n\n		<ion-card class="quick-action" (click)="getDirections()">\n\n			<ion-card-content>\n\n				<ion-icon name="compass"></ion-icon>\n\n				<span>Find us / Get directions</span>\n\n			</ion-card-content>\n\n		</ion-card>\n\n	</ion-row>\n\n\n\n	<ion-row>\n\n		<ion-card class="quick-action" (click)="openFacebookPage()">\n\n			<ion-card-content>\n\n				<ion-icon name="logo-facebook"></ion-icon>\n\n				<span>Visit us on Facebook</span>\n\n			</ion-card-content>\n\n		</ion-card>\n\n	</ion-row>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\final\test\fyves-sap-final\src\pages\home\home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"C:\appp\fyves-sap-final\src\pages\home\home.html"*/'<!--\n\n  Generated template for the HomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle >\n\n			<ion-icon name="menu"></ion-icon>\n\n		</button>\n\n		<ion-title>Fyves SAP</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content class="getting-started">\n\n	<div class="home-hello">\n\n		<img src="assets/imgs/home.png" />\n\n\n\n<!--	<div class="hello-title" text-wrap>\n\n			<h1>FYVES SAP</h1>\n\n			Une nouvelle vision des affaires !\n\n		</div>     -->\n\n	</div>\n\n\n\n	\n\n\n\n	<ion-row *ngFor="let tilePair of tiles">\n\n		<ion-col *ngFor="let tile of tilePair">\n\n			<ion-card class="tile" (click)="navigateTo(tile)">\n\n				<ion-card-content>\n\n					<ion-item>\n\n						<h1><ion-icon color="primary" [name]="tile.icon"></ion-icon></h1>\n\n						<h2>{{tile.title}}</h2>\n\n					</ion-item>\n\n				</ion-card-content>\n\n			</ion-card>\n\n		</ion-col>\n\n	</ion-row>\n\n\n\n\n\n\n\n	<ion-row>\n\n		<ion-card class="quick-action" (click)="callUs()">\n\n			<ion-card-content>\n\n				<ion-icon name="phone-portrait"></ion-icon>\n\n				<span>Call us</span>\n\n			</ion-card-content>\n\n		</ion-card>\n\n	</ion-row>\n\n\n\n	<ion-row>\n\n		<ion-card class="quick-action" (click)="sendEmail()">\n\n			<ion-card-content>\n\n				<ion-icon name="mail"></ion-icon>\n\n				<span>contact@fyvesconsulting.com</span>\n\n			</ion-card-content>\n\n		</ion-card>\n\n	</ion-row>\n\n\n\n	<ion-row>\n\n		<ion-card class="quick-action" (click)="getDirections()">\n\n			<ion-card-content>\n\n				<ion-icon name="compass"></ion-icon>\n\n				<span>Find us / Get directions</span>\n\n			</ion-card-content>\n\n		</ion-card>\n\n	</ion-row>\n\n\n\n	<ion-row>\n\n		<ion-card class="quick-action" (click)="openFacebookPage()">\n\n			<ion-card-content>\n\n				<ion-icon name="logo-facebook"></ion-icon>\n\n				<span>Visit us on Facebook</span>\n\n			</ion-card-content>\n\n		</ion-card>\n\n	</ion-row>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\appp\fyves-sap-final\src\pages\home\home.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_2__providers_home_call_service__["a" /* CallService */],
@@ -1770,9 +1770,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(445);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(446);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__ = __webpack_require__(386);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_file_path__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_file_chooser__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_file_path__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_file_chooser__ = __webpack_require__(391);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(837);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_angularfireconfig__ = __webpack_require__(838);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_angularfire2_auth__ = __webpack_require__(88);
@@ -1782,21 +1782,21 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_imagehandler_imagehandler__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_requests_requests__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_chat_chat__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_crop__ = __webpack_require__(390);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_geofence_geofence_module__ = __webpack_require__(403);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_home_email_service__ = __webpack_require__(398);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_home_maps_service__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_home_call_service__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_home_in_app_browser_service__ = __webpack_require__(393);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_buddies_buddies_module__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_chats_chats_module__ = __webpack_require__(404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_fcm__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_crop__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_geofence_geofence_module__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_home_email_service__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_home_maps_service__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_home_call_service__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_home_in_app_browser_service__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_buddies_buddies_module__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_chats_chats_module__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_fcm__ = __webpack_require__(404);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_chat_token__ = __webpack_require__(839);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_all_users_all_users_module__ = __webpack_require__(401);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_geolocation__ = __webpack_require__(397);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_native_geofence__ = __webpack_require__(396);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_device_ngx__ = __webpack_require__(394);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__angular_common_http__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_all_users_all_users_module__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_geolocation__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_native_geofence__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_device_ngx__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__angular_common_http__ = __webpack_require__(403);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1847,20 +1847,20 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */], { tabsPlacement: 'top' }, {
                     links: [
+                        { loadChildren: '../pages/all-users/all-users.module#AllUsersPageModule', name: 'AllUsersPage', segment: 'all-users', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/buddies/buddies.module#BuddiesPageModule', name: 'BuddiesPage', segment: 'buddies', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/buddychat/buddychat.module#BuddychatPageModule', name: 'BuddychatPage', segment: 'buddychat', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/chats/chats.module#ChatsPageModule', name: 'ChatsPage', segment: 'chats', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/groups/groups.module#GroupsPageModule', name: 'GroupsPage', segment: 'groups', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profilepic/profilepic.module#ProfilepicPageModule', name: 'ProfilepicPage', segment: 'profilepic', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/all-users/all-users.module#AllUsersPageModule', name: 'AllUsersPage', segment: 'all-users', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ragister/ragister.module#RagisterPageModule', name: 'RagisterPage', segment: 'ragister', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/request/request.module#RequestPageModule', name: 'RequestPage', segment: 'request', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/geofence/geofence.module#GeofencePageModule', name: 'GeofencePage', segment: 'geofence', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/chats/chats.module#ChatsPageModule', name: 'ChatsPage', segment: 'chats', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/geofence/geofence.module#GeofencePageModule', name: 'GeofencePage', segment: 'geofence', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_18__pages_geofence_geofence_module__["GeofencePageModule"],
@@ -1954,7 +1954,7 @@ var UserProvider = /** @class */ (function () {
         var promise = new Promise(function (resolve, reject) {
             _this.afireAuth.auth.createUserWithEmailAndPassword(newuser.email, newuser.password).then(function () {
                 _this.afireAuth.auth.currentUser.updateProfile({
-                    displayName: newuser.username, phone: newuser.phone, role: newuser.role,
+                    displayName: newuser.username,
                     photoURL: 'https://www.limestone.edu/sites/default/files/user.png'
                 }).then(function () {
                     _this.firedata.child(_this.afireAuth.auth.currentUser.uid).set({
@@ -1982,8 +1982,6 @@ var UserProvider = /** @class */ (function () {
         var promise = new Promise(function (resolve, reject) {
             _this.afireAuth.auth.currentUser.updateProfile({
                 displayName: _this.afireAuth.auth.currentUser.displayName,
-                phone: _this.afireAuth.auth.currentUser.phone,
-                role: _this.afireAuth.auth.currentUser.role,
                 photoURL: imageurl
             }).then(function () {
                 _this.firedata.child(_this.afireAuth.auth.currentUser.uid).update({ photoURL: imageurl }).then(function () {
@@ -2019,8 +2017,6 @@ var UserProvider = /** @class */ (function () {
         var promise = new Promise(function (resolve, reject) {
             _this.afireAuth.auth.currentUser.updateProfile({
                 displayName: newname,
-                phone: newphone,
-                role: newrole,
                 photoURL: _this.afireAuth.auth.currentUser.photoURL
             }).then(function () {
                 _this.firedata.child(__WEBPACK_IMPORTED_MODULE_2_firebase___default.a.auth().currentUser.uid).update({
@@ -2096,8 +2092,8 @@ var data = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(447);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_map_map__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_geofence_geofence__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_chats_chats__ = __webpack_require__(405);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_all_users_all_users__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_chats_chats__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_all_users_all_users__ = __webpack_require__(247);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_user_user__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2185,7 +2181,7 @@ var MyApp = /** @class */ (function () {
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\final\test\fyves-sap-final\src\app\app.html"*/'<ion-menu id="leftMenu" [content]="content" type="overlay">\n\n	<ion-header>\n\n		<ion-toolbar>\n\n			<ion-title>Menu</ion-title>\n\n		</ion-toolbar>\n\n	</ion-header>\n\n\n\n<ion-content>\n\n		\n\n	 <!--\n\n		<ion-list>\n\n		<ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n			<ion-icon color="primary"  [name]="p.icon" item-left></ion-icon>\n\n			{{p.title}}\n\n		</ion-item>\n\n       \n\n		<ion-list-header *ngIf="auth.getEmail()">{{auth.getEmail()}}</ion-list-header>\n\n\n\n		<ion-item (click)="logout()" *ngIf="auth.authenticated">\n\n			<ion-icon color="primary" name="log-out" item-left></ion-icon>\n\n			Log out\n\n		</ion-item>\n\n\n\n		<ion-item (click)="login()" *ngIf="!auth.authenticated">\n\n			<ion-icon  color="primary" name="log-in" item-left></ion-icon>\n\n			Log in\n\n		</ion-item>\n\n		\n\n		-->\n\n	<ion-list>\n\n		<ion-item (click)="openPageHomePage()">\n\n			<ion-icon color="primary"  name= "home" item-left></ion-icon>\n\n			Home\n\n		</ion-item>\n\n		<ion-item (click)="openPageMapPage()">\n\n			<ion-icon color="primary"  name= "map" item-left></ion-icon>\n\n			Géolocalisation\n\n		</ion-item>\n\n		<ion-item *ngIf="role == \'Superviseur\' ||role == \'Administrateur\'" (click)="openPageGeofencePage()">\n\n			<ion-icon color="primary"  name= "md-pin" item-left></ion-icon>\n\n			Géo-Réperage\n\n		</ion-item>\n\n		<ion-item (click)="openPageChatsPage()">\n\n			<ion-icon color="primary"  name= "swap" item-left></ion-icon>\n\n			Chat Message\n\n		</ion-item>\n\n    </ion-list>\n\n    <button ion-button *ngIf="role == \'Superviseur\' ||role == \'Administrateur\'"  full (click)="openPageManage()">manage users <ion-icon name="md-people"></ion-icon>\n\n	</button>\n\n\n\n</ion-content>\n\n\n\n</ion-menu>\n\n\n\n<ion-menu id="client" [content]="content" type="overlay">\n\n	<ion-header>\n\n		<ion-toolbar>\n\n			<ion-title>Menu</ion-title>\n\n		</ion-toolbar>\n\n	</ion-header>\n\n\n\n<ion-content>\n\n		\n\n	 \n\n</ion-content>\n\n\n\n</ion-menu>\n\n\n\n\n\n<ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="true"></ion-nav>\n\n'/*ion-inline-end:"C:\final\test\fyves-sap-final\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\appp\fyves-sap-final\src\app\app.html"*/'<ion-menu id="leftMenu" [content]="content" type="overlay">\n\n	<ion-header>\n\n		<ion-toolbar>\n\n			<ion-title>Menu</ion-title>\n\n		</ion-toolbar>\n\n	</ion-header>\n\n\n\n<ion-content>\n\n		\n\n	 <!--\n\n		<ion-list>\n\n		<ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n			<ion-icon color="primary"  [name]="p.icon" item-left></ion-icon>\n\n			{{p.title}}\n\n		</ion-item>\n\n       \n\n		<ion-list-header *ngIf="auth.getEmail()">{{auth.getEmail()}}</ion-list-header>\n\n\n\n		<ion-item (click)="logout()" *ngIf="auth.authenticated">\n\n			<ion-icon color="primary" name="log-out" item-left></ion-icon>\n\n			Log out\n\n		</ion-item>\n\n\n\n		<ion-item (click)="login()" *ngIf="!auth.authenticated">\n\n			<ion-icon  color="primary" name="log-in" item-left></ion-icon>\n\n			Log in\n\n		</ion-item>\n\n		\n\n		-->\n\n	<ion-list>\n\n		<ion-item (click)="openPageHomePage()">\n\n			<ion-icon color="primary"  name= "home" item-left></ion-icon>\n\n			Home\n\n		</ion-item>\n\n		<ion-item (click)="openPageMapPage()">\n\n			<ion-icon color="primary"  name= "map" item-left></ion-icon>\n\n			Géolocalisation\n\n		</ion-item>\n\n		<ion-item *ngIf="role == \'Superviseur\' ||role == \'Administrateur\'" (click)="openPageGeofencePage()">\n\n			<ion-icon color="primary"  name= "md-pin" item-left></ion-icon>\n\n			Géo-Réperage\n\n		</ion-item>\n\n		<ion-item (click)="openPageChatsPage()">\n\n			<ion-icon color="primary"  name= "swap" item-left></ion-icon>\n\n			Chat Message\n\n		</ion-item>\n\n    </ion-list>\n\n    <button ion-button *ngIf="role == \'Superviseur\' ||role == \'Administrateur\'"  full (click)="openPageManage()">manage users <ion-icon name="md-people"></ion-icon>\n\n	</button>\n\n\n\n</ion-content>\n\n\n\n</ion-menu>\n\n\n\n<ion-menu id="client" [content]="content" type="overlay">\n\n	<ion-header>\n\n		<ion-toolbar>\n\n			<ion-title>Menu</ion-title>\n\n		</ion-toolbar>\n\n	</ion-header>\n\n\n\n<ion-content>\n\n		\n\n	 \n\n</ion-content>\n\n\n\n</ion-menu>\n\n\n\n\n\n<ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="true"></ion-nav>\n\n'/*ion-inline-end:"C:\appp\fyves-sap-final\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */], __WEBPACK_IMPORTED_MODULE_9__providers_user_user__["a" /* UserProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]])
     ], MyApp);
