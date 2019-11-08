@@ -19,44 +19,12 @@
   </ion-item>
 -->
   <ion-grid>
-    <ion-row *ngFor="let u of users">
+    <ion-row  *ngFor="let u of users">
       <ion-col class='test'><p>{{u.displayName}}</p></ion-col>
       <ion-col class='test'><p>{{u.email}}</p></ion-col>
       <ion-col class='test'><p>{{u.role}}</p></ion-col>
       <ion-col class='test'><p>{{u.phone}}</p></ion-col>
-      <ion-col class='test'><p> <ion-icon ios="ios-trash" md="md-trash" col-left></ion-icon><ion-icon ios="ios-create" md="md-create"></ion-icon></p></ion-col>
-    </ion-row>
-  </ion-grid>
-</ion-list>
-
-<ion-list >
-  <ion-grid no-padding>
-    <ion-row *ngFor="let u of users" align-items-end>
-      <ion-col col-2 text-wrap >
-        <ion-item class='my-thin-col'>
-          <ion-label >{{u.displayName}}</ion-label>
-        </ion-item>
-      </ion-col>
-      <ion-col col-3 text-wrap>
-        <ion-item class="value-column-remove-padding">
-          <ion-label class="value-font-style">{{u.role}}</ion-label>
-        </ion-item>
-      </ion-col>
-      <ion-col col-2 text-wrap>
-        <ion-item class="value-column-remove-padding">
-          <ion-label class="value-font-style">{{u.phone}}</ion-label>
-        </ion-item>
-      </ion-col>
-      <ion-col col-3 text-wrap>
-        <ion-item class="value-column-remove-padding">
-          <ion-label class="value-font-style">{{u.phone}}</ion-label>
-        </ion-item>
-      </ion-col>
-      <ion-col col-2 text-wrap>
-        <ion-item class="value-column-remove-padding">
-          <ion-icon ios="ios-trash" md="md-trash" padding></ion-icon><ion-icon ios="ios-create" md="md-create"></ion-icon>
-        </ion-item>
-      </ion-col>
+      <ion-col class='test'><p> <ion-icon (click)="showConfirm(u.uid)" ios="ios-trash" md="md-trash" col-left></ion-icon><ion-icon (click)="openRegister()" ios="ios-create" md="md-create"></ion-icon></p></ion-col>
     </ion-row>
   </ion-grid>
 </ion-list>

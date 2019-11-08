@@ -15,6 +15,7 @@ export class RagisterPage {
   username:AbstractControl;
   password:AbstractControl;
   cnfpass:AbstractControl;
+  name:any;
 
   authForm : FormGroup;
   passwordtype:string='password';
@@ -38,9 +39,12 @@ export class RagisterPage {
     this.role = this.authForm.controls['role'];
     this.password = this.authForm.controls['password'];
     this.cnfpass = this.authForm.controls['cnfpass'];
+
+    this.name = navParams.get('Name');
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad RagisterPage');
+    console.log(this.name);
   }
   doSignup(){
 

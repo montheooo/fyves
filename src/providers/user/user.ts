@@ -98,6 +98,11 @@ export class UserProvider {
       })
       return promise;
   }
+
+  deleteUser(uid){
+    this.firedata.child(uid).remove();
+  }
+
   getallusers() {
     var promise = new Promise((resolve, reject) => {
       this.firedata.orderByChild('uid').once('value', (snapshot) => {

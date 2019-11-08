@@ -1,13 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
+ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+MERGED from [com.android.support:customtabs:23.3.0] C:\Users\Maison\.gradle\caches\transforms-1\files-1.1\customtabs-23.3.0.aar\d3b943c1932155219504927f5296a240\AndroidManifest.xml:17:1-24:12
 MERGED from [:CordovaLib] C:\appp\fyves-sap-final\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
-INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-16:12
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\Maison\.gradle\caches\transforms-1\files-1.1\support-v4-23.3.0.aar\0666f397645bd5e8f1d771905a71be5f\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
 	package
 		ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:2:98-136
 		INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml
@@ -44,6 +46,10 @@ ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifes
 		ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
 application
 ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:5:5-12:19
+MERGED from [com.android.support:customtabs:23.3.0] C:\Users\Maison\.gradle\caches\transforms-1\files-1.1\customtabs-23.3.0.aar\d3b943c1932155219504927f5296a240\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:customtabs:23.3.0] C:\Users\Maison\.gradle\caches\transforms-1\files-1.1\customtabs-23.3.0.aar\d3b943c1932155219504927f5296a240\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\Maison\.gradle\caches\transforms-1\files-1.1\support-v4-23.3.0.aar\0666f397645bd5e8f1d771905a71be5f\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\Maison\.gradle\caches\transforms-1\files-1.1\support-v4-23.3.0.aar\0666f397645bd5e8f1d771905a71be5f\AndroidManifest.xml:22:5-20
 	android:supportsRtl
 		ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:5:114-140
 	android:label
@@ -80,12 +86,20 @@ ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifes
 		ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
 uses-sdk
 ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:13:5-74
+INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:13:5-74
+MERGED from [com.android.support:customtabs:23.3.0] C:\Users\Maison\.gradle\caches\transforms-1\files-1.1\customtabs-23.3.0.aar\d3b943c1932155219504927f5296a240\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:23.3.0] C:\Users\Maison\.gradle\caches\transforms-1\files-1.1\customtabs-23.3.0.aar\d3b943c1932155219504927f5296a240\AndroidManifest.xml:20:5-44
 MERGED from [:CordovaLib] C:\appp\fyves-sap-final\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] C:\appp\fyves-sap-final\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\Maison\.gradle\caches\transforms-1\files-1.1\support-v4-23.3.0.aar\0666f397645bd5e8f1d771905a71be5f\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Users\Maison\.gradle\caches\transforms-1\files-1.1\support-v4-23.3.0.aar\0666f397645bd5e8f1d771905a71be5f\AndroidManifest.xml:20:5-43
+INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:13:5-74
 	android:targetSdkVersion
 		ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:13:42-71
 	android:minSdkVersion
 		ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:13:15-41
+		INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:14:5-81
 	android:name
@@ -94,3 +108,13 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:15:5-80
 	android:name
 		ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:15:22-77
+uses-permission#android.permission.CALL_PHONE
+ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:16:5-69
+	android:name
+		ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:16:22-66
+uses-feature#android.hardware.telephony
+ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:17:5-88
+	android:required
+		ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:17:61-85
+	android:name
+		ADDED from C:\appp\fyves-sap-final\platforms\android\app\src\main\AndroidManifest.xml:17:19-60

@@ -34,8 +34,12 @@ import { AllUsersPageModule } from '../pages/all-users/all-users.module';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Geofence } from '@ionic-native/geofence';
 import { Device } from '@ionic-native/device/ngx';
+import { CallNumber } from '@ionic-native/call-number';
+import { BrowserTab } from '@ionic-native/browser-tab';
+import { EmailComposer } from '@ionic-native/email-composer';
 import { HttpClientModule, HttpClient, HttpHandler } from '@angular/common/http';
 import { BackgroundGeolocation, BackgroundGeolocationConfig, BackgroundGeolocationResponse } from '@ionic-native/background-geolocation';
+import { SendmailPageModule } from '../pages/sendmail/sendmail.module';
 
 
 
@@ -51,6 +55,7 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig, BackgroundGeolocati
     BuddiesPageModule,
     ChatsPageModule,
     AllUsersPageModule,
+    SendmailPageModule,
     AngularFireModule.initializeApp(config),
   ],
   bootstrap: [IonicApp],
@@ -77,6 +82,9 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig, BackgroundGeolocati
     Geolocation,
     Geofence,
     Device,
+    CallNumber,
+    BrowserTab,
+    EmailComposer,
     HttpClient,
     HttpClientModule,
     Geolocation,
