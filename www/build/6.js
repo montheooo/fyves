@@ -1,6 +1,6 @@
 webpackJsonp([6],{
 
-/***/ 846:
+/***/ 848:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BuddychatPageModule", function() { return BuddychatPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buddychat__ = __webpack_require__(856);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buddychat__ = __webpack_require__(857);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -27,7 +27,7 @@ var BuddychatPageModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__buddychat__["a" /* BuddychatPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__buddychat__["a" /* BuddychatPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__buddychat__["a" /* BuddychatPage */]),
             ],
         })
     ], BuddychatPageModule);
@@ -38,15 +38,15 @@ var BuddychatPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 856:
+/***/ 857:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuddychatPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_chat_chat__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_imagehandler_imagehandler__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_chat_chat__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_imagehandler_imagehandler__ = __webpack_require__(194);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -135,7 +135,7 @@ var BuddychatPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-buddychat',template:/*ion-inline-start:"C:\appp\fyves-sap-final\src\pages\buddychat\buddychat.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      <div class="user-icon"><img src="{{buddy.photoURL}}"></div>\n\n      {{buddy.displayName}}\n\n      <br><p class="statusclass">{{buddyStatus}}</p>\n\n    </ion-title>\n\n   </ion-navbar>\n\n </ion-header>\n\n <ion-content #content>\n\n <div class = "chatwindow">\n\n   <ion-list no-lines>\n\n     <ion-item *ngFor = "let item of allmessages; let i = index" text-wrap>\n\n       <!-- <ion-avatar item-left *ngIf="item.sentby === buddy.uid">\n\n         <img src="{{buddy.photoURL}}">\n\n       </ion-avatar> -->\n\n       <div class="bubble me" *ngIf="item.sentby === buddy.uid">\n\n         <h3 *ngIf="!imgornot[i]">{{item.message}}</h3>\n\n         <img src="{{item.message}}" *ngIf="imgornot[i]">\n\n         <div class="msg-time">{{item.timeofmsg}}</div>\n\n       </div>\n\n       <!-- <ion-avatar item-right *ngIf="item.sentby != buddy.uid">\n\n         <img src="{{photoURL}}">\n\n       </ion-avatar> -->\n\n       <div class="bubble you" *ngIf="item.sentby != buddy.uid">\n\n         <h3 *ngIf="!imgornot[i]">{{item.message}}</h3>\n\n         <img src="{{item.message}}" *ngIf="imgornot[i]">\n\n         <div class="msg-time">{{item.timeofmsg}}</div>\n\n       </div>\n\n     </ion-item>\n\n   </ion-list>\n\n </div>\n\n </ion-content>\n\n <ion-footer ion-fixed>\n\n   <form>\n\n   <ion-toolbar class="no-border" color="white">\n\n     <ion-input [(ngModel)]="newmessage" name= "newmessage" class="newmsg" placeholder="Ecrire votre message ..."></ion-input>\n\n     <ion-buttons end>\n\n       <button ion-button (click)="sendPicMsg()"><ion-icon class="camera-btn" name="camera"></ion-icon></button>\n\n     </ion-buttons>\n\n     <ion-buttons end>\n\n       <button ion-button round type="submit" class="sentbtn" (click)="addmessage()"><ion-icon name="send" color="primary" style="font-size: 2.2em;"></ion-icon></button>\n\n     </ion-buttons>\n\n    </ion-toolbar>\n\n  </form>\n\n</ion-footer>\n\n'/*ion-inline-end:"C:\appp\fyves-sap-final\src\pages\buddychat\buddychat.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_chat_chat__["a" /* ChatProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_3__providers_imagehandler_imagehandler__["a" /* ImagehandlerProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_chat_chat__["a" /* ChatProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_3__providers_imagehandler_imagehandler__["a" /* ImagehandlerProvider */]])
     ], BuddychatPage);
     return BuddychatPage;
 }());

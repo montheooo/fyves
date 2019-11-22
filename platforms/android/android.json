@@ -43,6 +43,10 @@
             {
               "xml": "<feature name=\"BrowserTab\"><param name=\"android-package\" value=\"com.google.cordova.plugin.browsertab.BrowserTab\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+              "count": 1
             }
           ],
           "/widget": [
@@ -123,6 +127,9 @@
     },
     "cordova-plugin-email-composer": {
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.fyvesconsulting.fyvessap"
+    },
+    "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.fyvesconsulting.fyvessap"
     }
   },
@@ -365,6 +372,15 @@
       "clobbers": [
         "cordova.plugins.email"
       ]
+    },
+    {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open",
+        "window.open"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -377,6 +393,7 @@
     "ionic-plugin-keyboard": "2.2.1",
     "mx.ferreyra.callnumber": "0.0.2",
     "cordova-plugin-browsertab": "0.2.0",
-    "cordova-plugin-email-composer": "0.9.2"
+    "cordova-plugin-email-composer": "0.9.2",
+    "cordova-plugin-inappbrowser": "3.1.0"
   }
 }

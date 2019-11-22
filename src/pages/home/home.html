@@ -71,8 +71,8 @@
 	</ion-row>
 
 	<ion-row>
-		<ion-card class="quick-action" (click)="openFacebookPage()">
-			<ion-card-content>
+		<ion-card class="quick-action" (click)="redirect()">
+			<ion-card-content ng-href="https://www.facebook.com/Fyves-Consulting-2706747922686031/?ref=settings" onclick="window.open(this.href, _system ,location=yes);">
 				<ion-icon name="logo-facebook"></ion-icon>
 				<span>Visit us on Facebook</span>
 			</ion-card-content>

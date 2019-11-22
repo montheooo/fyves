@@ -40,7 +40,8 @@ export class RagisterPage {
     this.password = this.authForm.controls['password'];
     this.cnfpass = this.authForm.controls['cnfpass'];
 
-    this.name = navParams.get('Name');
+    this.name = navParams.get('a');
+    console.log(this.name);
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad RagisterPage');
@@ -80,6 +81,8 @@ export class RagisterPage {
         }
       }
   }
+
+  
   doLogin(){
     this.navCtrl.setRoot('LoginPage');
   }

@@ -237,6 +237,15 @@ module.exports = [
     "clobbers": [
       "cordova.plugins.email"
     ]
+  },
+  {
+    "id": "cordova-plugin-inappbrowser.inappbrowser",
+    "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+    "pluginId": "cordova-plugin-inappbrowser",
+    "clobbers": [
+      "cordova.InAppBrowser.open",
+      "window.open"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -251,7 +260,8 @@ module.exports.metadata =
   "ionic-plugin-keyboard": "2.2.1",
   "mx.ferreyra.callnumber": "0.0.2",
   "cordova-plugin-browsertab": "0.2.0",
-  "cordova-plugin-email-composer": "0.9.2"
+  "cordova-plugin-email-composer": "0.9.2",
+  "cordova-plugin-inappbrowser": "3.1.0"
 };
 // BOTTOM OF METADATA
 });

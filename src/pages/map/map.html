@@ -14,5 +14,19 @@
 
 
 <ion-content padding>
+    <ion-item>
+        <ion-label>Selectionner un utilisateurs</ion-label>
+        <ionic-selectable
+        item-content
+        [(ngModel)]="data"
+        [items]="users"
+        itemValueField="key"
+        itemTextField="email"
+        [canSearch]="true"
+        (onChange)="portChange($event)" >
+        </ionic-selectable>
+      </ion-item>
+
+  	<div #map id="map"></div>
 
 </ion-content>

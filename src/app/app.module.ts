@@ -40,6 +40,12 @@ import { EmailComposer } from '@ionic-native/email-composer';
 import { HttpClientModule, HttpClient, HttpHandler } from '@angular/common/http';
 import { BackgroundGeolocation, BackgroundGeolocationConfig, BackgroundGeolocationResponse } from '@ionic-native/background-geolocation';
 import { SendmailPageModule } from '../pages/sendmail/sendmail.module';
+import { MapPageModule } from '../pages/map/map.module';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
+import { IonicSelectableModule } from 'ionic-selectable';
+import { MapPage } from '../pages/map/map';
+
 
 
 
@@ -56,6 +62,9 @@ import { SendmailPageModule } from '../pages/sendmail/sendmail.module';
     ChatsPageModule,
     AllUsersPageModule,
     SendmailPageModule,
+    MapPageModule,
+    
+    IonicSelectableModule,
     AngularFireModule.initializeApp(config),
   ],
   bootstrap: [IonicApp],
@@ -79,7 +88,7 @@ import { SendmailPageModule } from '../pages/sendmail/sendmail.module';
     ChatProvider,
     ChatProvider,
     EmailService,
-    Geolocation,
+    
     Geofence,
     Device,
     CallNumber,
@@ -91,6 +100,7 @@ import { SendmailPageModule } from '../pages/sendmail/sendmail.module';
     AngularFireAuth,
     AuthProvider,
     MapsService,
+    
     CallService,
     //HttpHandler,
 

@@ -36,9 +36,11 @@ export class AllUsersPage {
     this.navCtrl.push('RagisterPage');
   }
 
-  openRegister(){
+  openRegister(event,u){
     this.navCtrl.push('RagisterPage', 
-      {utilisateur:name})
+      {
+        a:u
+        })
   }
 
   showConfirm(uid) {

@@ -165,10 +165,14 @@ export class HomePage {
 
 	public callUs() {
 		//this.callService.call(data.phoneNumber);
-		this.callNumber.callNumber("697437695", true)
+		this.callNumber.callNumber("+237694812502", true)
   .then(res => console.log('Launched dialer!', res))
   .catch(err => console.log('Error launching dialer', err));
 	}
+
+	redirect() {
+ //this.inAppBrowser.create("https://www.w3schools.com/php/");
+}
 
 	addToken(token){
     var promise = new Promise((resolve, reject)=> {

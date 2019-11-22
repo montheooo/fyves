@@ -47,24 +47,18 @@
     </ion-list>
     <button ion-button *ngIf="role == 'Superviseur' ||role == 'Administrateur'"  full (click)="openPageManage()">manage users <ion-icon name="md-people"></ion-icon>
 	</button>
-
+    <div>
+		<button ion-button round  color="primary"  (click)="logout()">LOGOUT</button>
+	</div>
 </ion-content>
+
+
+
+
 
 </ion-menu>
 
-<ion-menu id="client" [content]="content" type="overlay">
-	<ion-header>
-		<ion-toolbar>
-			<ion-title>Menu</ion-title>
-		</ion-toolbar>
-	</ion-header>
 
-<ion-content>
-		
-	 
-</ion-content>
-
-</ion-menu>
 
 
 <ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="true"></ion-nav>

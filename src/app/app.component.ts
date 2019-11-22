@@ -13,6 +13,7 @@ import * as firebase from 'Firebase';
 import { AllUsersPage } from '../pages/all-users/all-users';
 import { UserInfo } from 'Firebase';
 import { UserProvider } from '../providers/user/user';
+import { ChatProvider } from '../providers/chat/chat';
 
 @Injectable()
 @Component({
@@ -37,7 +38,7 @@ export class MyApp {
 
    @ViewChild(Nav) nav: Nav; 
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, menu: MenuController, public userservice: UserProvider,public events: Events
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, menu: MenuController, public userservice: UserProvider,public events: Events, public chatservice : ChatProvider
  
    ) {
      
@@ -111,10 +112,15 @@ export class MyApp {
     this.nav.push(ChatsPage);
   };
 
-/* getrole(){ this.userservice.getuserdetails().then((value:UserInfo)=>{
-  console.log(value.role);
-  return value.role ;
-});}*/
+  logout() {
+    this.chatservice.setStatusOffline().then((res)=>{
+      if(res){
+        firebase.auth().signOut().then(() => {
+          this.nav.setRoot('LoginPage');
+        })
+      }
+    })
+   }
 
 
 
